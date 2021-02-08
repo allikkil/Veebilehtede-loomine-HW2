@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#retseptid {
+    scroll-margin: 20px;
+}
+
+.top {
+    text-align: center;
+    margin: 50px 10%;
+}
+
+.top h1 {
+    font-family: "Lato", monospace;
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFB100;
+}
+
+.top h2 {
+    font-family: "Raleway";
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #3D405B;
+    
+}
+
+.top-links, .meist-container, .retseptid-container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.top-links {
+    margin: 20px 0;
+}
+
+.top-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.top-links a {
+    text-decoration: none;
+    color: #3D405B;
+    font-family: "Lato", monospace;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+.top-links a:hover {
+    color: #FFB100;
+}
+
+.banner {
+    background-image: url("Images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+}
+
+.meist-container {
+    margin: 50px 10%;
+}
+
+.meist-container h1, .retseptid-container h1 {
+    font-family: "Lato", monospace;
+    font-size: 20px;
+    color: #3D405B;
+}
+
+.meist-container p {
+    margin-top: 25px;
+    font-family: "Raleway", monospace;
+    color: #3D405B;
+
+}
+
+.meist-container img {
+    display: none;
+}
+
+.retseptid-container {
+    margin: 50px 10%;
+}
+
+.flex-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-item {
+    margin-top: 20px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.flex-item:hover {
+    transform: scale(1.1);
+    
+}
+
+.flex-item h1 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(34, 34, 34, 0.507);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.eesti {
+    background-image: url("Images/ühepajatoit.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.aasia {
+    background-image: url("Images/ramen.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.itaalia {
+    background-image: url("Images/pasta.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer {
+    margin-top: 50px;
+    height: 100px;
+    background-color: #FFB100;
+}
+
+.footer-container {
+    height: 100%;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left p {
+    font-family: "Raleway", monospace;
+    font-size: 14px;
+    padding: 2px;
+    color: white;
+}
+
+.footer-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-right img {
+    width: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .top h1 {
+        font-size: 70px;
+    }
+
+    .top h2, .top-links a {
+        font-size: 24px;
+    }
+
+    .meist-container h1, .retseptid-container h1 {
+        font-size: 30px;
+    }
+
+    .meist-container p {
+        font-size: 20px;
+        line-height: 1.6em;
+    }
+
+    .flex-item {
+        height: 350px;
+        width: 350px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .banner {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+    }
+    .meist-container img {
+        margin-top: auto;
+        margin-bottom: auto;
+        display: inline;
+        height: 400px;
+        width: 400px;
+        margin-left: 25px;
+    }
+
+    .meist-container {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .footer-left p {
+        font-size: 16px;
+    }
+
+}
